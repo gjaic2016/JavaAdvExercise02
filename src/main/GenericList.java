@@ -9,6 +9,7 @@ public class GenericList<T> {
     private List<T> list = new ArrayList<>();
 
     public GenericList(List<T> list) {
+
         this.list = list;
     }
 
@@ -46,7 +47,13 @@ public class GenericList<T> {
     }
 
     //    ????????
-    public List<String> toString(List<T> list) {
-        return (List<String>) list;
+//    public List<String> toString(List<T> list) {
+//        return (List<String>) list;
+//    }
+
+
+    @Override
+    public String toString() {
+        return "GenericList{" + "list=" + list + '}';
     }
 }

@@ -8,38 +8,41 @@ import java.util.Optional;
 public class Main {
     public static void main(String[] args) {
 
-        GenericList<Object> gen = new GenericList<>();
-//        GenericList<Integer> genInteger = new GenericList<>();
-//        GenericList<String> genString = new GenericList<>();
+//        GenericList<Object> genericList = new GenericList<>();
+        GenericList<Integer> genericList = new GenericList<>();
+//        GenericList<String> genericList = new GenericList<>();
 
-        gen.addItem(22);
-        gen.addItem(11);
-        gen.addItem(43);
-        gen.addItem(58);
-        gen.addItem(667);
-//        gen.addItem("string0");
-//        gen.addItem("String1");
+        genericList.addItem(22);
+        genericList.addItem(11);
+        genericList.addItem(43);
+        genericList.addItem(58);
+        genericList.addItem(667);
+//        genericList.addItem("string0");
+//        genericList.addItem("String1");
 
-        List<Object> newList = gen.getList();
+//        List<Object> newList = genericList.getList();
+        List<Integer> newList = genericList.getList();
         printGenericListMethod(newList);
 
 
-//        List listaNova = gen.getList();
+        List<Integer> listaNova = genericList.getList();
         //filter i any ne prihvacaju predikat
-//        System.out.println("Test copy list and stream with terminal opreation ------->: " + listaNova.stream().count());
+        System.out.println("Test copy list and stream with terminal opreation ------->: " + listaNova.stream().count());
 
-        System.out.println("Return element value by given index: " + gen.getIndex(4));
+        System.out.println("Return element value by given index: " + genericList.getIndex(4));
 
-        gen.size();
+        genericList.size();
 
-        gen.remove(4);
+        genericList.remove(4);
         System.out.println("New list after removal");
         printGenericListMethod(newList);
 
         System.out.println("Find first: " + newList.stream().findFirst().get());
 
-//        Optional<Object> first = newList.stream().findFirst();
-//        System.out.println("Find first: " + first.get());
+        Optional<Integer> first = newList.stream().findFirst();
+        System.out.println("Find first: " + first.get());
+
+        genericList.toString();
 
         System.out.println("finished");
     }

@@ -1,22 +1,22 @@
-ZADATAK - GENERIÈKA LISTA
-1. Kreirajte klasu "GenericList" koja æe sadržavati listu generièkih objekata. Klasa bi trebala koristiti 
-genericse kako bi osigurali da može koristiti bilo koji tip elementa.
+ZADATAK - GENERIï¿½KA LISTA
+1. Kreirajte klasu "GenericList" koja ï¿½e sadrï¿½avati listu generiï¿½kih objekata. Klasa bi trebala koristiti 
+genericse kako bi osigurali da moï¿½e koristiti bilo koji tip elementa.
 
-2. Kreirana klasa bi trebala imati sljedeæe metode:
+2. Kreirana klasa bi trebala imati sljedeï¿½e metode:
  - add(T item) - dodaje element tipa T u listu
- - get(int index) - dohvaæa element na odreðenom mjestu u listi
- - remove(int index) - briše element na odreðenom mjestu u listi
- - size() - vraæa broj elemenata u listi
- - soString() - vraæa String reprezentaciju liste
+ - get(int index) - dohvaï¿½a element na odreï¿½enom mjestu u listi
+ - remove(int index) - briï¿½e element na odreï¿½enom mjestu u listi
+ - size() - vraï¿½a broj elemenata u listi
+ - toString() - vraï¿½a String reprezentaciju liste
 
-3. Krairajte klasu Main koja æe testirati GenericList klasu i napravite sljedeæe korake:
- - napravite instancu GenericList klase koja sadržava cijelobrojne vrijednosti
+3. Krairajte klasu Main koja ï¿½e testirati GenericList klasu i napravite sljedeï¿½e korake:
+ - napravite instancu GenericList klase koja sadrï¿½ava cijelobrojne vrijednosti
  - dodajte 5 vrijednosti u listu
- - ispišite velièinu liste
- - ispišite prvi i zadnji element u listi
- - izbrišite element na indeksu 3
- - ispišite velièinu liste
- - ispišite sadržaj liste uz pomoæ toString() metoda
- - kreirajte novu instancu klase GenericList koja sadrži String elemente
+ - ispiï¿½ite veliï¿½inu liste
+ - ispiï¿½ite prvi i zadnji element u listi
+ - izbriï¿½ite element na indeksu 3
+ - ispiï¿½ite veliï¿½inu liste
+ - ispiï¿½ite sadrï¿½aj liste uz pomoï¿½ toString() metoda
+ - kreirajte novu instancu klase GenericList koja sadrï¿½i String elemente
  - dodajte string vrijednosti u listu
- - ispišite sadržaj liste korištenjem toString() metode
+ - ispiï¿½ite sadrï¿½aj liste koriï¿½tenjem toString() metode
