@@ -34,13 +34,13 @@ public class Main {
         genericList.size();
 
         genericList.remove(4);
-        System.out.println("New list after removal");
+        System.out.println("New list after removal: ");
         printGenericListMethod(newList);
 
         System.out.println("Find first: " + newList.stream().findFirst().get());
 
         Optional<Integer> first = newList.stream().findFirst();
-        System.out.println("Find first: " + first.get());
+        System.out.println("Find first optional: " + first.get());
 
         genericList.toString();
 

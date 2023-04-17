@@ -54,6 +54,6 @@ public class GenericList<T> {
 
     @Override
     public String toString() {
-        return "GenericList{" + "list=" + list + '}';
+        return "GenericList{" + "list=" + this.list + '}';
     }
 }
